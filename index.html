@@ -9,19 +9,41 @@
         - Link to the CSS file (used to style the webpage)
 
         When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [x] Project 2 (REQUIRED FEATURE) 
+        - [x] Project 2 (STRETCH FEATURE) (favicon)
         - [ ] Any time after
         -->
         <title>Martian's Journey</title>
+        <link rel="icon" href="./img/martian.png">
         <style>
             /* Style rules go here. */
         </style>
+
+        <link rel="stylesheet" href="styles.css" />
+        
     </head>
     
     <body>
     
-        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+        <!-- navbar
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+        
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </div>
 
         <!-- headings
 
@@ -30,18 +52,39 @@
         - Contains the title, subtitle, image, and key buttons for the webpage
 
         When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [x] Project 2 (REQUIRED FEATURE) 
         - [ ] Project 3 (REQUIRED FEATURE) 
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <img id="header-img" src="./img/logo500.png"/>
-        <h1>On Tour Where?!</h1>
-        <h2>Tickets or not, join Martian's Journey for a tour adventure!</h2>
-        <h4>Already have tickets? Sign-up to share and connect with other fans.</h4>
-        <button type="button">Sign-Up</button>
-        <h4>A little late to the party? Find tickets or browse to learn more.</h4>
-        <button type="button">Find Tickets</button>
+        <div class="header-container" id="home">
+
+            <div class="header-item">
+                <div id="header-img"> <img src="./img/headerImage.png"/> </div>
+            </div>
+
+            <div class="header-item">
+                <h1>Martian's Journey</h1>
+                
+                <div class="header-signUp">
+                    <h2>Tickets or not, join Martian's Journey for a tour adventure!</h2>
+                    
+                    <h4>Already have tickets? Sign-up to share and connect with other fans.</h4>
+                    
+                    <div class="header-button">
+                        <button> Sign-Up </button>
+                    </div>
+                    
+                    <h4>A little late to the party? Find tickets or browse to learn more.</h4>
+                    
+                    <div class="header-button">
+                        <button> Find Tickets </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
         
         <!-- about
@@ -51,13 +94,19 @@
         - Contains a video, description, and key points about the event
 
         When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [x] Project 2 (REQUIRED FEATURE) 
         - [ ] Project 2 (STRETCH FEATURE) 
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>About the Event</h2>
-        <p>This event (and many more to come) is a long awaited tour from 
+
+        <h2 id="about">About the Event</h2>
+        <div class="media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WGiePuNFXwY?si=LYK4VwdhqqIBUU-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        
+        </div>
+
+        <p class="about-info">This event (and many more to come) is a long awaited tour from 
             [insert your favorite artist/author]. Fans are waiting to share about 
             their experience and share all sorts of recommendations based on 
             their itinerary. Join in the fun, find your crowd, and put your 
@@ -78,29 +127,54 @@
         - Contains images and descriptions of each activity
 
         When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [x] Project 2 (REQUIRED FEATURE) 
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>Event Schedule</h2>
-        <img alt="A picture of the official poster for the tour of a given artist." src="./img/31181A57-377D-4FBD-8803-4087947AC9C9_4_5005_c.jpeg"/>
-        
-        <h3>1. Make your first post.</h3>
-        <p>To join the in the fun on this tour, you must make your first post. 
-            Select your tour stop to see more posts near your area, or whether you are only here to browse.</p>    
-        <img alt="small picture of clicker selecting a buutton saying 'post'." src="./img/Activity1.png" height="150"/>
-        
-        <h3>2. Share your itinerary, what's interesting in your city?</h3>
-        <p>Share about your side quests and see how other fans are up to before the show.. Fun outside the venue is part of what makes a show trully special.</p>
-        <img alt="picture of a city" src="./img/Activity2.jpeg" height="150"/>
-        
-        <h3>3. Fit check! What does your fan sign say?</h3>
-        <p>Who is your concert twin? Do a fit check before the show and take a peek on what the vibe is for tonight!</p>
-        <img alt="magazine image of multiple outfits" src="./img/Activity3.png" height="150"/>
 
-        <h3>4. Share show highlights</h3>
-        <p>Share your favorite moments of the show or see what others are talking about for rescent tour stops. </p>
-        <img alt="stock photo of concert crowd" src="./img/Activity4.jpg" height="150"/>
+
+        <h2 id="schedule">Event Schedule</h2>
+
+        <div class="media">
+            <img alt="A picture of the official poster for the tour of a given artist." src="./img/images.jpeg" />
+        </div>
+
+        <div class="schedule-container">
+        
+        <div class="schedule-item">
+            <h3>1. Make your first post.</h3>
+            <p>To join the in the fun on this tour, you must make your first post. 
+                Select your tour stop to see more posts near your area, or whether you are only here to browse.</p>    
+                <div class="schedule-image">
+                    <img alt="small picture of clicker selecting a buutton saying 'post'." src="./img/Activity1.png" height="150"/>
+                </div>
+        </div>
+
+        <div class="schedule-item">
+            <h3>2. Share your itinerary, what's interesting in your city?</h3>
+            <p>Share about your side quests and see how other fans are up to before the show.. Fun outside the venue is part of what makes a show trully special.</p>
+            <div class="schedule-image">
+                <img alt="picture of a city" src="./img/Activity2.jpeg" height="150"/>
+            </div>
+        </div>
+
+        <div class="schedule-item">
+            <h3>3. Fit check! What does your fan sign say?</h3>
+            <p>Who is your concert twin? Do a fit check before the show and take a peek on what the vibe is for tonight!</p>
+            <div class="schedule-image">
+                <img alt="magazine image of multiple outfits" src="./img/Activity3.png" height="150"/>
+            </div>
+        </div>
+
+        <div class="schedule-item">
+            <h3>4. Share show highlights</h3>
+            <p>Share your favorite moments of the show or see what others are talking about for rescent tour stops. </p>
+            <div class="schedule-image">
+                <img alt="stock photo of concert crowd" src="./img/Activity4.jpg" height="150"/>
+            </div>
+        </div>
+
+        </div>
 
         <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
         <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
@@ -115,18 +189,29 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>Links</h2>
+        <h3 id="links">Links</h3>
 
         <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <a class="block" href="https://www.codepath.org">
+        <a class="block" href="https://www.memoirsmusings.com/2025/02/01/concert-travel-tips/">
             <article>
-                <h3>Link title</h3>
-                <p>Link description</p>
+                <h4>5 Essential Tips for traveling to Concerts Abroad</h4>
+                <p>Start planning your trip by getting some basic errands out of the way first.</p>
             </article>
         </a>
+        
+        <a class="block" href="https://x.com/home">
+            <article>
+                <h4>X - Join in the thread for your event.</h4>
+                <p>Join the X thread to follow important news about your show.</p>
+            </article>
+        </a>
+
             
-        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class="footer">
+            <h4>Learn More/ Email Our Team</h4>
+        </div>
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
 
     </body>
 </html>
