@@ -1,0 +1,382 @@
+/*** You will not need this file until Unit 3 ***/
+
+/***
+body{
+    background-color: #FFF5E5;
+    font-family: monospace
+}
+***/
+
+button{
+    background-color:#810B38;
+    color: #FFF5E5;
+}
+
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color);
+    height: 100%;
+    width:100%;
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+
+h1 {
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px var(--accent-color-darkest), 0 0 25px var(--accent-color-green-full), 0 0 5px var(--accent-color-light);
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    display: inline-block;
+    padding:20px;
+    border-radius: 50px;
+
+}
+
+h2 {
+    padding-bottom:20px;
+}
+
+h3 {
+    text-align: left;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    background-color:var(--accent-color-green);
+
+}
+
+h4 {
+    
+}
+
+p {
+    
+}
+
+a,
+a * {
+    p{
+        margin-top:0%;
+        font-size:15px;
+        font-style:italic;
+    }
+    h4{
+        margin-bottom:0%;
+    }
+    
+}
+
+hr{
+
+
+}
+
+.media {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-info{
+    padding-top: 50px;
+}
+
+
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: #810B38;    /* button color */
+    color: #FFF5E5;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container { /* Example A: This styles elements with class="header" */
+    padding: 50px;
+    margin-bottom: 300px;
+    background-color:var(--accent-color-green);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction:row;
+    text-align: left;
+    margin-top: 100px;
+    
+
+}
+
+
+.header-item:nth-of-type(1){
+
+    width:50%;
+
+    #header-img img{
+        display: block;
+        width: 700px;
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
+
+.header-item:nth-of-type(2){
+
+    width:50%;
+
+    .header-button button{
+
+        background-color: var(--accent-color-green);    
+        color: var(--accent-color-darkest);               
+        border: none;               
+        padding: 5px 12px;          
+        border-radius: 5px;        
+        cursor: pointer;
+        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 25px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
+        font-weight: bold;
+
+
+    }
+    
+    .header-signUp{
+        padding-top:0px;
+
+    }
+
+}
+
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--accent-color-light);
+    text-align:left;
+
+}
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow:hidden;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    margin-bottom:100px;
+    background-color:var(    --accent-color-darkest);
+    
+}
+
+.navbar ul li {
+    float: left;
+    padding:5px;
+
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent-color-light);
+    text-align: left;
+    padding:10px;
+    
+}
+
+.navbar ul li a:hover {
+    color: var(--accent-color-green-full);
+    
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.schedule-container{
+    display: block;
+    display:flex;
+    flex-direction:row;
+    margin-right:10px;
+    margin-left:10px;
+
+
+}
+
+.schedule-item{
+    
+}
+
+.schedule-image{
+
+}
+
+
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+a:link{
+    color: var(--text-color)
+
+}
+a:hover{
+    text-shadow: 1px 1px 2px var(--accent-color-green), 0 0 10px var(--accent-color-green-full), 0 0 5px var(--accent-color-medium);
+
+}
+a:visited{
+    background-color:rgba(128, 128, 128, 0.443)
+
+}
+a:active{
+    color:var(--accent-color-darkest)
+
+}
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #FFF5E5;
+    --text-color: #541A1A;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #541A1A;
+    --text-color-dark-mode: #FFF5E5;
+
+    /* Accent Colors */
+    --accent-color-light: #beb4a5;
+    --accent-color-medium: #772b2b;
+    --accent-color-dark: #810B38;
+    --accent-color-darkest: #3a0f0f;
+    --accent-color-green: #80d6a272;
+    --accent-color-green-full: #80d6a2;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
