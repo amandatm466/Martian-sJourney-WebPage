@@ -42,6 +42,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#links">Links</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
             </ul>
         </div>
 
@@ -57,7 +58,8 @@
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <div class="header-container" id="home">
+        <div id="home">
+        <div class="header-container">
 
             <div class="header-item">
                 <div id="header-img"> <img src="./img/headerImage.png"/> </div>
@@ -86,6 +88,8 @@
 
         </div>
 
+        </div>
+
         
         <!-- about
 
@@ -100,25 +104,40 @@
         - [ ] Any time between / after
         --> 
 
-        <h2 id="about">About the Event</h2>
-        <div class="media">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WGiePuNFXwY?si=LYK4VwdhqqIBUU-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        <div id="about">
+            
+            <div class="about-container">
+                <h2>About the Event</h2>
+                
+                <div class="about-info">
+
+                <div class="about-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WGiePuNFXwY?si=LYK4VwdhqqIBUU-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                </div>
+                
+                <p>This event (and many more to come) is a long awaited tour from 
+                    [insert your favorite artist/author]. Fans are waiting to share about 
+                    their experience and share all sorts of recommendations based on 
+                    their itinerary. Join in the fun, find your crowd, and put your 
+                    journey out there for other fans to enjoy. 
+                </p>
+                </div>
+                
+                <div class="what-to-expect">
+                    
+                    <h3>What to Expect From This Event</h3>
+                    
+                    <h4>Share your tour journey, buddy up with other fans!</h4>
+                    <ul>
+                        <li> <b>GET READY TO</b> <i>build the perfect itinerary with the help of locals from the host city.</i></li>
+                        <li> <b>CHECK OUT</b> <i>relevant information about transport, venues, regulations around this show.</i></li>
+                        <li> <b>DON'T FORGET TO</b> <i>share your favorite moments of the show and concert fits!</i></li>
+                    </ul>
+                </div>
+
+            </div>
         
         </div>
-
-        <p class="about-info">This event (and many more to come) is a long awaited tour from 
-            [insert your favorite artist/author]. Fans are waiting to share about 
-            their experience and share all sorts of recommendations based on 
-            their itinerary. Join in the fun, find your crowd, and put your 
-            journey out there for other fans to enjoy. </p>
-
-        <h3>Share your tour journey, buddy up with other fans! </h3>
-        <h4>Tag Line</h4>
-        <ul>
-            <li> <b>Bullet 1:</b> <i>Description</i></li>
-            <li> <b>Bullet 2:</b> <i>Description</i></li>
-            <li> <b>Bullet 3:</b> <i>Description</i></li>
-        </ul>
 
         <!-- schedule
 
@@ -132,48 +151,61 @@
         - [ ] Any time between / after
         --> 
 
+        <div id="schedule">
+        <h2>Event Schedule</h2>
 
-        <h2 id="schedule">Event Schedule</h2>
-
-        <div class="media">
-            <img alt="A picture of the official poster for the tour of a given artist." src="./img/images.jpeg" />
+        <div class="event-image">
+            <img alt="A picture of the official poster for the tour of a given artist." src="./img/images.jpg" />
         </div>
 
         <div class="schedule-container">
         
         <div class="schedule-item">
-            <h3>1. Make your first post.</h3>
-            <p>To join the in the fun on this tour, you must make your first post. 
-                Select your tour stop to see more posts near your area, or whether you are only here to browse.</p>    
+            
+            <div class="event-text">
+                <h3>1. Make your first post.</h3>
+                <p>To join the in the fun on this tour, you must make your first post. 
+                    Select your tour stop to see more posts near your area, or whether you are only here to browse.</p>
+            </div>    
                 <div class="schedule-image">
-                    <img alt="small picture of clicker selecting a buutton saying 'post'." src="./img/Activity1.png" height="150"/>
+                    <img alt="small picture of clicker selecting a buutton saying 'post'." src="./img/Activity1.png"/>
                 </div>
         </div>
 
         <div class="schedule-item">
-            <h3>2. Share your itinerary, what's interesting in your city?</h3>
-            <p>Share about your side quests and see how other fans are up to before the show.. Fun outside the venue is part of what makes a show trully special.</p>
+
+            <div class="event-text">
+                <h3>2. Share your itinerary, what's interesting in your city?</h3>
+                <p>Share about your side quests and see how other fans are up to before the show.. Fun outside the venue is part of what makes a show trully special.</p>
+            </div>
             <div class="schedule-image">
-                <img alt="picture of a city" src="./img/Activity2.jpeg" height="150"/>
+                <img alt="picture of a city" src="./img/Activity2.jpeg"/>
             </div>
         </div>
 
         <div class="schedule-item">
-            <h3>3. Fit check! What does your fan sign say?</h3>
-            <p>Who is your concert twin? Do a fit check before the show and take a peek on what the vibe is for tonight!</p>
+
+            <div class="event-text">
+                <h3>3. Fit check! What does your fan sign say?</h3>
+                <p>Who is your concert twin? Do a fit check before the show and take a peek on what the vibe is for tonight!</p>
+            </div>
             <div class="schedule-image">
-                <img alt="magazine image of multiple outfits" src="./img/Activity3.png" height="150"/>
+                <img alt="magazine image of multiple outfits" src="./img/Activity3.png"/>
             </div>
         </div>
 
         <div class="schedule-item">
-            <h3>4. Share show highlights</h3>
-            <p>Share your favorite moments of the show or see what others are talking about for rescent tour stops. </p>
+
+            <div class="event-text">
+                <h3>4. Share show highlights</h3>
+                <p>Share your favorite moments of the show or see what others are talking about for rescent tour stops. </p>
+            </div>
             <div class="schedule-image">
-                <img alt="stock photo of concert crowd" src="./img/Activity4.jpg" height="150"/>
+                <img alt="stock photo of concert crowd" src="./img/Activity4.jpg"/>
             </div>
         </div>
 
+        </div>
         </div>
 
         <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
@@ -189,16 +221,39 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h3 id="links">Links</h3>
+        <div id="links">
+        
+        <h2>Links</h2>
+
+        <div class="links-container">
 
         <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        
+        
+        <div class="travel-guides">
+
+            <h3>Travel Guides</h3>
+
         <a class="block" href="https://www.memoirsmusings.com/2025/02/01/concert-travel-tips/">
             <article>
                 <h4>5 Essential Tips for traveling to Concerts Abroad</h4>
                 <p>Start planning your trip by getting some basic errands out of the way first.</p>
             </article>
         </a>
+
+        <a class="block" href="https://www.foratravel.com/guides/HM77T3/attending-an-away-nfl-game-robert-huie">
+            <article>
+                <h4>FORA Explore - Attending an Away NFL Game</h4>
+                <p>Turn a short trip for an away NFL game into a weekend getaway by exploring the host city.</p>
+            </article>
+        </a>
+        </div>
+
         
+        <div class="additional-resources">
+
+            <h3>Additional Resources</h3>
+
         <a class="block" href="https://x.com/home">
             <article>
                 <h4>X - Join in the thread for your event.</h4>
@@ -206,11 +261,25 @@
             </article>
         </a>
 
+        <a class="block" href="https://www.ticketmaster.com">
+            <article>
+                <h4>Ticketmaster - Check out more events in this city.</h4>
+                <p>Log into ticketmaster to keep track of your tickets and see more shows near you.</p>
+            </article>
+        </a>
+        </div>
+
+        </div>
+
+        </div>
+
             
         <div class="footer">
             <h4>Learn More/ Email Our Team</h4>
         </div>
+
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <script src="index.js"></script>
 
 
     </body>

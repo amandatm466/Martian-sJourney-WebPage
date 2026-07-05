@@ -1,11 +1,5 @@
 /*** You will not need this file until Unit 3 ***/
 
-/***
-body{
-    background-color: #FFF5E5;
-    font-family: monospace
-}
-***/
 
 button{
     background-color:#810B38;
@@ -22,7 +16,6 @@ button{
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
 html {
-    background-color: var(--bg-color);
     height: 100%;
     width:100%;
 }
@@ -76,15 +69,17 @@ h1 {
 }
 
 h2 {
-    padding-bottom:20px;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+    background-color:var(--accent-color-green);
+    overflow:hidden;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 h3 {
-    text-align: left;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    background-color:var(--accent-color-green);
+    
+    
 
 }
 
@@ -93,6 +88,7 @@ h4 {
 }
 
 p {
+    text-align: left;
     
 }
 
@@ -114,21 +110,11 @@ hr{
 
 }
 
-.media {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.about-info{
-    padding-top: 50px;
-}
-
 
 
 button {
     /* Example Style, replace with your own! */
-    background-color: #810B38;    /* button color */
+    background-color: var(--accent-color-medium);    /* button color */
     color: #FFF5E5;               /* text color */
     border: none;               /* hides the default border */
     padding: 5px 12px;          /* space between button's text and edge */
@@ -151,17 +137,29 @@ button:hover {
   - [ ] Any time after
 ***/
 
+#home{
+    padding-top:40px;
+
+}
 .header-container { /* Example A: This styles elements with class="header" */
     padding: 50px;
-    margin-bottom: 300px;
+    margin: 50px 0px 300px 0px;
     background-color:var(--accent-color-green);
     border-radius: 20px;
 
     display: flex;
     flex-direction:row;
     text-align: left;
-    margin-top: 100px;
-    
+    justify-content: space-evenly;
+
+    h2 {
+        background-color: transparent;
+        padding: 0px;
+        margin: 0px;
+        width:auto;
+        text-align: left;
+
+    }   
 
 }
 
@@ -173,7 +171,7 @@ button:hover {
     #header-img img{
         display: block;
         width: 700px;
-        max-width: 50%;
+        max-width: 75%;
         height: auto;
         object-fit: cover;
     }
@@ -192,14 +190,18 @@ button:hover {
         padding: 5px 12px;          
         border-radius: 5px;        
         cursor: pointer;
-        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 25px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
+        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 0px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
         font-weight: bold;
 
+    }
 
+    button:hover{
+        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 25px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
     }
     
     .header-signUp{
         padding-top:0px;
+        margin:35px 0px 35px 0px
 
     }
 
@@ -224,6 +226,8 @@ button:hover {
     width: 100%;
     background-color: var(--accent-color-light);
     text-align:left;
+    padding: 0px 0px 0px 10px;
+    height:40px;
 
 }
 
@@ -243,17 +247,25 @@ button:hover {
     overflow:hidden;
     position:fixed;
     width:100%;
-    top:0;
+    top:-16px;
     left:0;
     margin-bottom:100px;
     background-color:var(    --accent-color-darkest);
+
     
 }
-
+    
 .navbar ul li {
     float: left;
     padding:5px;
 
+}
+
+.navbar ul li #theme-button{
+    display: block;
+    margin: 5px auto;
+    width: 140px;
+    margin-left:30px;
 }
 
 .navbar ul li a {
@@ -281,8 +293,46 @@ button:hover {
   - [ ] Project 4 (STRETCH FEATURE) 
   - [ ] Any time after
 ***/
+#about{
+    display:block;
+    padding-top:30px;
+}
+
+.about-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul li{
+        text-indent: 50px;
+
+    }
+
+}
+
+.about-info{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0px 35px 0px;
+    padding: 0px 50px 0px 50px;
+
+    p {
+        text-align: left;
+        padding: 50px 0px 50px 50px;
+    }
+    
+    .about-video iframe {
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 auto;
+    }
+}
 
 
+.what-to-expect{
+    padding: 0px 0px 10px 50px;
+
+}
 /*** Schedule Section ***
   
   Purpose:
@@ -293,25 +343,78 @@ button:hover {
   - [ ] Project 4 (STRETCH FEATURE) 
   - [ ] Any time after
 ***/
-
-.schedule-container{
+#schedule{
     display: block;
+    padding-top:30px;
+    padding-bottom:100px;
+}
+.schedule-container{
     display:flex;
     flex-direction:row;
-    margin-right:10px;
-    margin-left:10px;
+    margin-top: 50px;
+    margin-bottom:50px;
 
+
+}
+
+.event-image {
+    display:block;
+    margin-top: 40px;
+    background-color: var(--accent-color-cream-shadow);
+    margin-left: -50px;
+    margin-right: -50px;
+
+    img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+
+    }
 
 }
 
 .schedule-item{
+    display: block;
+    background-color: var(--accent-color-cream-shadow);
+    border-radius: 20px;
+    margin-right:10px;
+    margin-left:10px;
+    width:500px;
+    padding: 20px;
     
 }
 
-.schedule-image{
+.event-text {
+
+    h3 {
+        display:block;
+        background-color: var(--accent-color-green);
+        text-align: center;
+        border-radius:20px;
+        margin:5px;
+        padding:10px;
+
+    }
+
+    p{
+        margin:20px 25px 20px 25px;
+
+    }
 
 }
 
+.schedule-image img{
+    display: block;
+    margin: auto;
+    margin-bottom:20px;
+
+    height:150px;
+    width:250px;
+    background-color: var(--accent-color-green);
+    border-radius: 10px;
+
+}
 
 
 
@@ -325,6 +428,33 @@ button:hover {
   - [ ] Project 4 (STRETCH FEATURE) 
   - [ ] Any time after
 ***/
+
+#links{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.links-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 0px 50px 0px;
+
+    h3{
+        padding:50px 0px 40px 0px;
+    }
+
+}
+
+.travel-guides {
+
+}
+
+.additional-resources {
+    
+
+}
 
 a:link{
     color: var(--text-color)
@@ -346,7 +476,83 @@ a:active{
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+
+
+/*** DARK MODE***/
+
+/* Default dark mode style */
+.dark-mode {
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
+
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    background-color: var(--accent-color-dark);
+    
+}
+
+.dark-mode h2 {
+    background-color: var(--dark-accent-color-green);
+    color: var(--accent-color-dark);
+
+}
+
+.dark-mode .header-container{
+    background-color: var(--dark-accent-color-green);
+    color: var(--accent-color-dark);
+
+    h2{
+        background-color: transparent;
+    }
+
+    .header-button button{
+
+        background-color: var(--accent-color-dark);    
+        color: var(--text-color-dark-mode);               
+        border: none;               
+        padding: 5px 12px;          
+        border-radius: 5px;        
+        cursor: pointer;
+        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 0px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
+        font-weight: bold;
+
+    }
+
+    button:hover{
+        box-shadow:  1px 1px 2px var(--accent-color-darkest), 0 0 25px var(--accent-color-medium), 0 0 5px var(--accent-color-light);
+    }
+
+    
+}
+
+.dark-mode .event-image{background-color: var(--dark-accent-color-cream-shadow);}
+.dark-mode .schedule-item{background-color: var(--dark-accent-color-cream-shadow);}
+.dark-mode .schedule-image img{background-color: var(--dark-accent-color-green);}
+.dark-mode .event-text{
+    h3{
+        background-color: var(--dark-accent-color-green);
+        color: var(--accent-color-darkest);
+    }
+}
+
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+    color: rgb(233, 125, 122);
+}
+
+.dark-mode a:link{
+    color: var(--text-color-dark-mode);
+}
+
+.dark-mode .footer{
+    background-color: var(--dark-accent-color-cream-shadow);
+}
+
+
 
 /*** Custom Colors (OPTIONAL) ***
   
@@ -365,18 +571,21 @@ a:active{
     --text-color: #541A1A;
 
     /* Dark Mode */
-    --bg-color-dark-mode: #541A1A;
+    --bg-color-dark-mode: #3a0f0f;
     --text-color-dark-mode: #FFF5E5;
+    --dark-accent-color-green: #b4e7c8c8;  /* #b4e7c8e8 */
+    --dark-accent-color-cream-shadow: #4f413dd5;
 
     /* Accent Colors */
     --accent-color-light: #beb4a5;
     --accent-color-medium: #772b2b;
-    --accent-color-dark: #810B38;
-    --accent-color-darkest: #3a0f0f;
+    --accent-color-dark: #3a0f0f;
+    --accent-color-darkest: #280707;
     --accent-color-green: #80d6a272;
     --accent-color-green-full: #80d6a2;
+    --accent-color-cream-shadow: #f8cebea0;
 
     /* Error Colors */
     --error-color: #f8bbd0;
-    --error-color-border: #e63946;
+    --error-color-border: #1c1213;
 }
