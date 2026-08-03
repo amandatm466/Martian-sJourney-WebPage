@@ -235,3 +235,13 @@ let animateImage=()=>{
   modalImage.style.transform = `rotate(${rotateFactor}deg)`;
 
 }
+
+let modalButton = document.getElementById('modal-button');
+
+const closeModal=()=>{
+  let modal = document.getElementById('success-modal');
+  modal.style.display="none";
+
+}
+
+modalButton.addEventListener("click", closeModal);

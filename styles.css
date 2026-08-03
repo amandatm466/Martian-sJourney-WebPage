@@ -627,6 +627,18 @@ body.reduce-motion .revealable {
     height: auto;
 }
 
+.outer-modal{
+
+    button{
+        display: block;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 55px;
+        text-align: center;
+
+    }
+}
+
 
 
 /*** DARK MODE***/
