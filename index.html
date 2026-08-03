@@ -43,6 +43,7 @@
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#links">Links</a></li>
                 <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id="motion-button">Reduce Motion</button></li>
             </ul>
         </div>
 
@@ -104,7 +105,7 @@
         - [ ] Any time between / after
         --> 
 
-        <div id="about">
+        <div id="about" class="revealable">
             
             <div class="about-container">
                 <h2>About the Event</h2>
@@ -151,7 +152,7 @@
         - [ ] Any time between / after
         --> 
 
-        <div id="schedule">
+        <div id="schedule" class="revealable">
         <h2>Event Schedule</h2>
 
         <div class="event-image">
@@ -208,8 +209,91 @@
         </div>
         </div>
 
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+         
+        <!-- rsvp
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+        
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        
+        <div id="rsvp" class="revealable">
+
+            <h2>RSVP</h2>
+
+            <div class="rsvp-container">
+                
+                <div class="rsvp-para">
+                    <p>
+                        Don't miss out on the ultimate pre- and post-show experience! 
+                        Join our community hub by RSVP-ing to this event to share insider tips, 
+                        find the best local spots, and connect with fellow fans. 
+                        Sign up today to RSVP for exclusive city meetups and secure your spot 
+                        in the celebration.
+                    </p>
+
+                </div>
+                
+                <div class="rsvp-participants">
+                    <p>🎟️ Luke Skywalker of Tatooine has RSVP'd</p>
+                    <p>🎟️ Ahsoka Tano of Alderaan has RSVP'd.</p>
+                    <p>🎟️ Princess Leia Organa from Montana has RSVP'd.</p>
+                </div>
+
+            
+            </div>
+            
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                    <label>Name:</label>
+                    <input id="name">
+                    <label>E-mail:</label>
+                    <input id="e_mail">
+                    <label>Event of Interest:</label>
+                    <input id="event_name">
+                </form>
+                
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            
+            </div>      
+        
+        </div>
+
+
+
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text"></p>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-image"src="./img/headerImage.png"/>
+                </div>
+            </div>
+        </div>
+ 
+
 
         <!-- links
 
@@ -221,7 +305,7 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <div id="links">
+        <div id="links" class="revealable">
         
         <h2>Links</h2>
 
